@@ -1,5 +1,5 @@
 import os
-from setuptools import setup
+from setuptools import find_packages, setup
 
 
 setup(
@@ -10,9 +10,7 @@ setup(
     url='http://github.com/ambitioninc/django-db-mutex/',
     author='Wes Kendall',
     author_email='wesleykendall@gmail.com',
-    packages=[
-        'manager_utils',
-    ],
+    packages=find_packages(),
     classifiers=[
         'Programming Language :: Python',
         'License :: OSI Approved :: BSD License',
